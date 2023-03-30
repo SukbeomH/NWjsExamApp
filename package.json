@@ -1,0 +1,29 @@
+{
+	"name": "nw-exam-app",
+	"version": "0.0.1",
+	"main": "./main.js",
+	"window": {
+		"title": "exam-app",
+		"toolbar": false,
+		"frame": false,
+		"resizable": false,
+		"icon": "./resource/icon/icon.png"
+	},
+	"build": {
+		"nwVersion": "0.74.0"
+	},
+	"scripts": {
+		"dist": "build --tasks win-x86,win-x64,mac-x64 --mirror https://dl.nwjs.io/ .",
+		"start": "run --x64 --mirror https://dl.nwjs.io/ ."
+	},
+	"devDependencies": {
+		"@babel/preset-typescript": "^7.21.0",
+		"nwjs-builder-phoenix": "^1.15.0",
+		"nwjs-types": "^1.0.0",
+		"nwts-tools": "^0.3.6",
+		"typescript": "^5.0.2"
+	},
+	"dependencies": {
+		"@types/nw.gui": "^0.0.21"
+	}
+}
